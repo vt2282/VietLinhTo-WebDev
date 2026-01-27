@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale=1"/>
+        <title>HTML Elements Intro</title>
+    </head>
+    <body>
+        <h1 id="top">
+            Heading 1 is the most important text on the page! Only ONE h1 per HTML page
+        </h1>
+        <h2>
+            Heading 2 - smaller than h1, slightly less important, but also big bold text
+        </h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>
+            Heading 6 - smallest heading. The default sizes are usually overriden with CSS.
+        </h6>
+        <p>Look at the size of this paragraph compare to our h6.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet ac sapien quis 
+            gravida. <em>Praesent rutrum scelerisque nisi,</em> eget tincidunt nisl interdum condimentum. 
+            Duis a venenatis orci, et euismod lacus. 
+            <br />
+            Vestibulum ac nisl pulvinar, sodales enim 
+            molestie, auctor urna. Nulla dignissim hendrerit arcu, elementum suscipit neque tempor 
+            ac. Vivamus a elementum magna. Proin vitae ante risus. Etiam non nisl orci.
+        </p>
+        <hr />
+        <p>
+            Cras in nisi urna. Morbi suscipit neque ac ex ullamcorper, a auctor ex consectetur. Ut 
+            condimentum fringilla convallis. <a href="https://www.lipsum.com/feed/html" target="_blank">Donec sodales ullamcorper justo non congue.</a> Nam non 
+            nisi eleifend, sollicitudin erat ut, vestibulum justo. Sed cursus tristique accumsan. 
+            Mauris ullamcorper varius nulla, id molestie nisi fermentum eget. Integer faucibus sit 
+            amet nulla eget ultricies. Nullam ullamcorper facilisis leo, eget mattis tellus. <strong>Sed 
+            mauris mauris, maximus ac risus sit amet, maximus rutrum metus.</strong>
+        </p>
+        <a href="./boilerplate.html" target="_self">Link to another page in our site.</a>
+        <a href="#top">Back to Top</a>
+        <!-- 
+        Using an h2 here for the HW example because we already used up our h1. 
+        Actual HW is gonna be h1 -->
+        <h2>Buttermilk Pancake</h2>
+        <!-- 
+        Placeholder image from a placeholder image API enpoint 
+        Alternative text reads the description of the text, not pixel
+        Something that explains what's going on if someone can't see an image -->
+        <img src="https://placehold.co/600x400" alt="placeholder image for buttermilk pancake" />
+        <img src="https://placecats.com/300/200" alt="cat not pancake" />
+         <!-- Don't use width= or height= because it will override CSS -->
+        <img src="./image/buttermilk-pancakes-2.jpg" alt="fluffiest pancakes with fruit!" width="400px" />
+         <h3>Ingredients</h3>
+         <!-- Order doesn't matter, we can use an unordered list (ul) -->
+          <ul>
+            <li>Eggs</li>
+            <li>Flour</li>
+            <li>Butter</li>
+            <li>Milk</li>
+          </ul>
+         <h3>Instructions</h3>
+         <!-- Order matters with steps here (ol) -->
+          <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+          </ol>
+    </body>
+</html>
