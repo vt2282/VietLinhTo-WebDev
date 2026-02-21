@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale=1"/>
+    
+        <title>Positioning Basics</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+     <header> Fixed nav bar </header>
+    <body>
+        <div class="abs-no-parent-pos">
+            <p>This div has no parent element with a set 
+                position property. This div is absolutely 
+                positioned</p>
+        </div>
+
+        <div class="rel-parent-pos">
+            <p>This is a relatively positioned parent div</p>
+            <div class="abs-rel-parent-pos">
+                <p>This div is absolutely positioned inside 
+                    a relatively positioned parent div
+            </div>
+        </div>
+    </body>
+</html>
