@@ -1,0 +1,91 @@
+<!-- START - COPY PASTE TO ALL HTML FILES -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale=1"/>
+        <title>Viet Linh Theatre Portfolio</title>
+       <link rel="stylesheet" href="./css/home.css"/>
+       <!-- REMEMBER TO CHANGE LINK TO CSS FILE -->
+    </head>
+
+   <header>
+      <nav> 
+        <div class="topbar">
+            <a href="javascript:void(0);" onclick="HamMenu()">
+            <div class="ham_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </a>
+        </div>
+
+
+        <div class="navbar" id="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="concepts.html">concepts</a></li>
+            <li>
+                    <div class="productions"> 
+                        <a href="javascript:void(0);" onclick="DropDown()">productions ▾</a>
+                          <div class="productions_dropdown" id="dropdown">
+                           <a href="./productions/directing.html">directing</a>
+                            <a href="./productions/lighting.html">lighting</a>
+                            <a href="./productions/scenic.html">scenic</a>
+                          </div>
+                    </div>
+                </li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul> 
+        </div>
+    </nav>
+
+    <script src="hamburber.js"></script>
+    </header>
+    <!-- END -->
+
+    <body>
+    <div class="image">
+        <img src="img/home/adgs.png" class="adgs" alt="wide shot of the set with three podiums and a large american flag hanging behind">
+        <img src="img/home/maria.png" class="maria" alt="woman playfully poke her sister with a book">
+        <img src="img/home/tbobw.png" class="tbobw" alt="young girl pulling another young girl towards a boy sitting on couch">
+        <img src="img/home/the_rhino.png" class="therhino" alt="a family of 5 sitting together in a messy space">
+        <img src="img/home/the_wrestling.png" class="thewrestling" alt="man talking into michrophone with a glaring red light">
+            <div class="background1" id="top">
+                <div class="title">
+                    <h2>VIET LINH</h2>
+                    <h1>theatre portfolio</h1>
+                </div>
+                <a href="#background2" class="arrow_container">
+                    <img src="img/home/arrow.png" class="arrow">
+                </a>
+            </div>
+    </div>
+    
+    <div class="background2" id="background2">
+        <img src="img/home/headshot.png" class="headshot" alt="childhood photo on the left and professional headshot on the right">
+        <div class="bio">
+            <h2>BIO</h2>
+            <br>
+            <p>VIET LINH (She/Her) is a multi-hyphenated theatre maker, with 
+                experience in directing, playwriting, scenic, and lighting design. As 
+                a proud Vietnamese artist who is living her childhood dream in 
+                NYC, Viet Linh is dedicated to creating original, radically 
+                inclusive works that uplift marginalized identities. She is 
+                currently pursuing a BFA in Drama at NYU Tisch's Playwrights Horizons 
+                Theatre School (PHTS), with a minor in Integrated Design & Media at NYU Tandon. </p>
+                <br>
+            <p class="upcoming">UPCOMING SHOWS: <a href=https://www.eventbrite.com/o/the-feminist-theatre-company-117721777171 target="_blank" style="color:white">Mojada</a> (March 28-29), 
+                <a href="https://events.ticketleap.com/events/playwrights-horizons-theater-school/tina-qiu-the-witch-cat-cafe-by-adam-szymkowicz" target="_blank" style="color:white"> The Witch Cat Cafe </a> (April 9-11),
+                <a href=# target="_blank" style="color:white">Mỳ Tôm</a> (April 16-18)
+        </div>
+        <div class="line">
+            <p class="desktop"><a href="#top" class="back">Back to Top</a></p>
+            <p class="mobile"><a href="#top" class="back">▲</a></p>
+        </div>
+    </div>
+    
+    </body>
+</html>

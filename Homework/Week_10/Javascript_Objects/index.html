@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Objects Lesson</title>
+  </head>
+  <body>
+    <h1>Open the Console to see your output!</h1>
+
+    <script>
+
+// INTRO
+        // let name = "Alex";
+        // let age = 22;
+        // let isStudent = true;
+
+        const person = {
+            name: "Alex", // key: "name", value: "Alex"
+            age: 22, // key: "age", value: "22"
+            isStudent: true, // key: "isStudent", value: "true"
+        };
+     
+        console.log(person);
+
+// ASCENDING PROPERTIES (NOTATION)
+        const movie = {
+            title: "Inception", 
+            year: 2010,
+            director: "Christopher Nolan",
+        };
+
+        // Log the title using dot notation (most common)
+        console.log(movie.title);
+
+        // Log the director using bracket notation 
+        console.log(movie["director"]);
+
+        // Store "year" in a variable, then use it to log the year
+        let field = "year";
+        console.log(movie[field]);
+
+        // Use dot notation by default .
+        // Use bracket notation when the key is dynamic (stored in a variable)
+
+// MODIFYING OBJECTS
+        const car = {
+            make: "Toyota",
+            model: "Camry",
+            year: 2020,
+        };
+
+        // Update the year to 2024
+        car.year = 2024;
+
+        // Add a color property set to any color you like
+        car.color = "blue";
+
+        // Delete the model property
+        delete car.model;
+
+        // Log the full object to see the result
+        console.log(car);
+
+// OBJECT METHODS
+
+        // A method is a function stored as a property inside an object. 
+        const calculator = {
+            add(a, b) {
+                return a + b;
+            },
+            subtract(a, b) {
+                return a - b;
+            },
+        };
+
+                // (a, b) is a function
+
+        console.log(calculator.add(5, 3)); 
+        console.log(calculator.subtract(10, 4)); 
+
+        const dog = {
+            name: "Biscuit",
+            breed: "Beagle",
+            bark() {
+                console.log(this.name + " says: Woof!");
+            },
+        };
+
+        // Call bark()
+        dog.bark();
+
+        // Add a method called "describe" that logs:
+        //    "Biscuit is a Beagle"
+// this = the object
+        dog.describe = function () {
+        console.log(this.name + " is a " + this.breed);
+        };
+
+        dog.describe();
+
+
+// BUILT IN OBJECT METHODS
+        const laptop = {
+            brand: "Apple",
+            model: "MacBook Pro",
+            ram: 16,
+            storage: 512,
+        };
+
+        // Log all the keys
+        console.log(Object.keys(laptop));
+
+        // Log all the values
+        console.log(Object.values(laptop));
+
+        // Log all key-value pairs
+        console.log(Object.entries(laptop));
+        
+// BUILD A BOOK OBJECT
+        const book = {
+            title: "Project Hail Mary",
+            author: "Andy Weir",
+            pages: 496,
+            isAvailable: true,
+        };
+
+        console.log(book.title);
+        console.log(book["author"]);
+
+        book.genre = "Science Fiction";
+        book.isAvailable = false;
+
+        book.describe = function () {
+            console.log(this.title + "by" + this.author + "has" + this.pages)
+        };
+
+        book.describe ()
+
+        console.log(Object.keys(book));
+
+    </script>
+  </body>
+</html>

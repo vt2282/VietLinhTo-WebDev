@@ -1,0 +1,312 @@
+/* START - COPY PASTE TO ALL CSS FILES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+header {
+    /* position: sticky; */
+    top: 0;
+    z-index: 50;
+    border-bottom: white 1px solid;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: RGB(0,0,0);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.navbar p{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+p:hover {
+    cursor: default;
+}
+
+.navbar li:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.productions_dropdown{
+  display: none;
+  position: absolute;
+  background-color: rgb(20, 20, 20);
+  width: 20%;
+}
+
+.productions_dropdown a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.productions:hover .productions_dropdown {
+  display: block;
+}
+
+.productions_dropdown a:hover {
+    background-color: rgb(50, 50, 50);
+}
+/* END */
+
+.resume {
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 380px 340px 340px 200px;
+    padding-left: 89px;
+    padding-top: 40px;
+}
+
+.categories div {
+  background-color: rgb(129, 39, 39);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 900;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 380px 340px 340px 200px;
+    padding-left: 89px;
+}
+
+.table div {
+  background-color: black;
+  border-top: 2px solid rgb(129, 39, 39);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.pdf {
+    padding-top: 50px;
+    background-color: black;
+    padding-bottom: 150px;
+    padding-left: 100px;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+}
+
+.line {
+    background-color: black;
+    height: 75px;
+    border-top: 1px solid white;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    font-size: 15px;
+    color: rgb(195, 195, 195);
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+.topbar {
+  background-color: #000000;  
+    border-bottom: white 1px solid;
+    width: 100vw;
+}   
+
+.ham_menu  {
+  height: 20px;
+  width: 15px;
+  padding: 15px;
+  position: relative;
+}
+
+.ham_menu span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    border-radius: 25px;
+}
+
+.ham_menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham_menu span:nth-child(3) {
+    top: 75%;
+}
+
+.navbar {
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 15px;
+    display: none;
+    position: absolute;
+    z-index: 50;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+
+.productions_dropdown{
+  display: none;
+  background-color: rgb(20, 20, 20);
+}
+
+.productions_dropdown a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    position: relative;
+    padding-left: 100px;
+}
+
+.resume {
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 100px;
+    padding: 30px;
+    text-align: center;
+}
+
+.all {
+    overflow: scroll;
+  white-space: nowrap;
+  margin-left: 29px;
+  margin-right: 29px;
+
+}
+.categories {
+    display: grid;
+    grid-template-columns: 380px 340px 340px 200px;
+    padding-top: 40px;
+}
+
+.categories div {
+  background-color: rgb(129, 39, 39);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 900;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 380px 340px 340px 200px;
+}
+
+.table div {
+  background-color: black;
+  border-top: 2px solid rgb(129, 39, 39);
+  border-right: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.pdf {
+    padding-top: 50px;
+    background-color: black;
+    padding-bottom: 50px;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+a {
+    color: white;
+    font-size: 25px;
+}
+
+.line {
+    background-color: black;
+    height: 75px;
+    border-top: 1px solid white;
+    z-index: 40;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.back {
+    font-size: 30px;
+    background-color: rgba(75, 75, 75, 0.75);
+    padding: 10px;
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+}
+
+.desktop {
+    display: none;
+}
+}
