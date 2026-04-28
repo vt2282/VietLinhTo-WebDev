@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ScrollTrigger Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="spy-nav">
+      <a href="#intro" data-spy-link="intro">Intro</a>
+      <a href="#about" data-spy-link="about">About</a>
+      <a href="#work" data-spy-link="work">Work</a>
+      <a href="#team" data-spy-link="team">Team</a>
+      <a href="#contact" data-spy-link="contact">Contact</a>
+    </nav>
+
+    <div class="fixed_position"></div>
+
+    <main>
+      <section id="intro" class="panel">
+        <h1 class="reveal">Welcome</h1>
+        <p class="reveal">Scroll down to see ScrollTrigger in action.</p>
+      </section>
+
+      <section id="about" class="panel">
+        <h2 class="reveal">About</h2>
+        <p class="reveal">
+          Each heading and paragraph fades in as you reach it.
+        </p>
+      </section>
+
+      <section id="work" class="panel">
+        <h2 class="reveal">Work</h2>
+        <p class="reveal">
+          Watch the nav above — it follows your scroll position.
+        </p>
+      </section>
+
+      <section id="team" class="panel">
+        <h2 class="reveal">Team</h2>
+        <p class="reveal">That highlighting is called a scrollspy.</p>
+      </section>
+
+      <section id="contact" class="panel">
+        <h2 class="reveal">Contact</h2>
+        <p class="reveal">You're at the end. Scroll back up to re-trigger.</p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
