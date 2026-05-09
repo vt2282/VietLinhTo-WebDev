@@ -1,0 +1,83 @@
+nav {
+    background: #7ccae0;
+    font-family: "Papyrus";
+
+}
+
+.navbar-brand {
+    font-family: "Papyrus";
+    font-size: 2.5rem;
+}
+
+
+.main_display {
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    font-family: "Papyrus";
+}
+
+body {
+    background-image: url("../img/ocean.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.seashell {
+    margin-top: 120px;
+    width: 45%;
+    height: auto;
+}
+
+.question {
+    font-size: 3.5rem;
+}
+
+.description {
+    font-size: 1.3rem
+}
+
+@media (min-width: 768px) {
+  .seashell {
+    max-width: 219px;}
+  .question {
+    font-size: 2.5rem;}
+.description {
+    font-size: 1.6rem}
+}
+
+@media (min-width: 992px) { 
+    .seashell {
+    max-width: 283px;}
+    .question {
+    font-size: 3rem;}
+.description {
+    font-size: 2.1rem}
+} 
+
+@media (min-width: 1200px) { 
+    .seashell {
+    max-width: 342px;} 
+    .question {
+    font-size: 3rem;}
+.description {
+    font-size: 2.1rem}
+}
+
+.account {
+    background: #7ccae0;
+    font-size: 1.2rem;
+    color: rgbrgb(0, 0, 0);
+    font-family: "Arial";
+}
+
+.account:hover {
+    background: #0c5189;
+    color: white;
+} 
+
+
+
+

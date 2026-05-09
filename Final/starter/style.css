@@ -1,0 +1,80 @@
+.main_display {
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    font-family: "Papyrus";
+
+}
+
+body {
+    background-image: url("../img/ocean.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.seashell {
+    width: 45%;
+    height: auto;
+}
+
+.description {
+    font-size: 3vh;
+    font-style: italic;
+}
+
+.heading {
+    font-family: "Papyrus";
+    font-size: 3.5rem;
+}
+
+.modal {
+    font-family: "Papyrus";
+
+}
+
+@media (min-width: 768px) {
+  .seashell {
+    max-width: 219px;}
+  }
+
+
+@media (min-width: 992px) { 
+    .seashell {
+    max-width: 283px;}
+}
+
+
+@media (min-width: 1200px) { 
+    .seashell {
+    max-width: 342px;} 
+    }
+
+.account {
+    background: #7ccae0;
+    font-size: 1.2rem;
+    color: rgbrgb(0, 0, 0);
+    font-family: "Papyrus";
+}
+
+.account:hover {
+    background: #0c5189;
+    color: white;
+} 
+
+.switch {
+    background: rgba(0,0,0,0);
+    font-size: small;
+    width:max-content;
+    text-decoration:underline;
+    border: rgba(0,0,0,0);
+}
+
+.note {
+    text-decoration:none;
+    color: black;
+    padding: 15px;
+}
+
+

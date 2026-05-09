@@ -1,0 +1,142 @@
+nav {
+    background: #7ccae0;
+    font-family: "Papyrus";
+
+}
+
+.navbar-brand {
+    font-family: "Papyrus";
+    font-size: 2.5rem;
+}
+
+.main_display {
+    margin-top: 100px;
+    font-family: "Papyrus";
+}
+
+.heading {
+  display: flex;
+  justify-content: center; 
+  font-size: 2rem;
+
+}
+
+body {
+    background-image: url("../img/ocean.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    .container {
+        width: 700px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 35px;
+    }
+
+    #reviewInput {
+        width: 100%;
+    }
+
+    #reviewList {
+         display: flex;
+  flex-direction: column;
+  width: 700px;
+  gap: 0;
+  margin: 0 auto;
+    }
+
+    .review-card {
+  background: linear-gradient(#7ccae0, white);
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 15px;
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+@media (min-width: 768px) {
+    .container,
+    #reviewList {
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .navbar-brand {
+        font-size: 2.2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container,
+    #reviewList {
+        max-width: 850px;
+    }
+
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    .heading {
+        font-size: 2.3rem;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container,
+    #reviewList {
+        max-width: 1000px;
+    }
+
+    .heading {
+        font-size: 2.6rem;
+    }
+
+    .review-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    
+    .heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    #reviewList {
+        width: 95%;
+    }
+
+    .review-card {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    #reviewInput {
+        font-size: 1rem;
+    }
+
+}
